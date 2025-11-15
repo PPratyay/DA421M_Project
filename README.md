@@ -7,9 +7,9 @@
 
   
 
-  - Or use the raw GitHub URL if you uploaded the image to the repo (replace `USERNAME`, `REPO`, and `BRANCH` accordingly):
 
-    `![CLIP Diagram](https://github.com/PPratyay/DA421M_Project/blob/main/CLIP_Diagram.png)`
+
+    ![CLIP Diagram](https://github.com/PPratyay/DA421M_Project/blob/main/CLIP_Diagram.png)
 
 **Files to know**
 - `Clip_Implementation.ipynb`: The main Jupyter notebook containing the full implementation and training loop.
