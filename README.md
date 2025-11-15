@@ -1,6 +1,6 @@
 # Training CLIP for Non English Captions
 
-**Project Description**: This project fine-tunes OpenAI CLIP (RN50x4) on the Flickr30k image-caption dataset to improve image-caption alignment and retrieval. The notebook includes data preparation, optional caption translation, training, and validation code.
+**Project Description**: This project fine-tunes OpenAI CLIP on the Flickr30k image-caption dataset to improve image-caption alignment and retrieval. The notebook includes data preparation, optional caption translation, training, and validation code.
 
 **Diagram of the Proposed Model**
 
@@ -27,26 +27,19 @@
     - `flickr-image-dataset/results.csv` (or `results.csv` at dataset root)
   - When uploading, name the dataset `flickr-image-dataset` (or note the dataset slug) so the notebook code referencing `/kaggle/input/flickr-image-dataset/...` will work without edits.
 
-- **Step 3 — Configure the notebook runtime**:
-  - In the notebook's `Settings` (top right gear icon):
-    - Set `Accelerator` to `GPU` (recommended: GPU with enough memory; the default on Kaggle should work for many models). This notebook uses `RN50x4` which benefits from a GPU.
-    - Enable `Internet` if the notebook uses external downloads (translation via Hugging Face, or pip installs from GitHub). Note: Kaggle allows enabling internet per notebook.
 
-- **Step 4 — Install dependencies (run first cells)**:
+
+- **Step 3 — Install dependencies (run first cells)**:
   - Run the first code cell that installs Python packages. The notebook includes lines like:
 
     `! pip install ftfy regex tqdm`
 
     `! pip install git+https://github.com/openai/CLIP.git`
 
-  - If the notebook uses Hugging Face translation or other models, also ensure `transformers` and `datasets` are installed (e.g., `pip install transformers datasets`), and that internet is enabled.
+  - Ensure that The Internet is enabled.
 
-- **Step 5 — Attach dataset and run all cells**:
+- **Step 4 — Attach dataset and run all cells**:
   - Make sure the uploaded dataset is attached to the notebook (the `Add data` panel shows the dataset attached).
   - Run all cells in order (`Runtime` → `Run all` or `Run` menu). The notebook handles preprocessing, optional translation, dataset copying into `/kaggle/working/`, DataLoader setup, training and validation loops.
 
-- **Notes & tips**:
-  - If you run out of memory or GPU memory, reduce `BATCH_SIZE` in the notebook or use a smaller CLIP backbone (e.g., `RN50` instead of `RN50x4`).
-  - The notebook uses `torch.cuda.is_available()` to detect GPU. If no GPU is available, training will be much slower on CPU.
-  - The notebook may perform caption translation using Hugging Face `pipeline` (Helsinki-NLP). Translation requires internet and may take time for large caption sets.
-  - To resume training or save best model, the notebook saves a `best_model.pt` to the working directory—download it from the Kaggle Notebook outputs once training completes.
+
