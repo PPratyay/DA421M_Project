@@ -5,13 +5,11 @@
 **Diagram of the Proposed Model**
 - **Diagram usage**: Add a diagram image to your repository to visualize how CLIP processes images and text. Create a folder named `images` in the repo root and upload your diagram there (for example `images/clip_diagram.png`). Then include it in this README using the markdown below:
 
-  - Markdown (relative path):
-
-    `![CLIP Diagram](images/clip_diagram.png)`
+  
 
   - Or use the raw GitHub URL if you uploaded the image to the repo (replace `USERNAME`, `REPO`, and `BRANCH` accordingly):
 
-    `![CLIP Diagram](https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/images/clip_diagram.png)`
+    `![CLIP Diagram](https://github.com/PPratyay/DA421M_Project/blob/main/CLIP_Diagram.png)`
 
 **Files to know**
 - `Clip_Implementation.ipynb`: The main Jupyter notebook containing the full implementation and training loop.
