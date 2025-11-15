@@ -7,9 +7,10 @@
 
   
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PPratyay/DA421M_Project/main/CLIP_Diagram.png" alt="CLIP Diagram" width="600"/>
+</p>
 
-
-    `![CLIP Diagram](https://raw.githubusercontent.com/PPratyay/DA421M_Project/main/CLIP_Diagram.png)`
 
 **Files to know**
 - `Clip_Implementation.ipynb`: The main Jupyter notebook containing the full implementation and training loop.
