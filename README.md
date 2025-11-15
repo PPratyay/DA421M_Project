@@ -9,7 +9,7 @@
 
 
 
-    ![CLIP Diagram](CLIP_Diagram.png)
+    `![CLIP Diagram](CLIP_Diagram.png)`
 
 **Files to know**
 - `Clip_Implementation.ipynb`: The main Jupyter notebook containing the full implementation and training loop.
