@@ -1,5 +1,4 @@
-$Content = @'
-**Project Title**: CLIP Fine-tuning on Flickr30k
+## Training CLIP for Non English Captions
 
 **Project Description**: This project fine-tunes OpenAI CLIP (RN50x4) on the Flickr30k image-caption dataset to improve image-caption alignment and retrieval. The notebook includes data preparation, optional caption translation, training, and validation code.
 
