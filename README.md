@@ -22,9 +22,7 @@
 
 - **Step 2 — Add the Flickr30k dataset to the notebook**:
   - In the notebook editor, open the right-side pane and click `Add data` → `Upload data`.
-  - Upload the Flickr30k images and the labels/results CSV the notebook expects. The notebook expects a dataset layout like:
-    - `flickr-image-dataset/flickr30k_images/flickr30k_images/*` (image files)
-    - `flickr-image-dataset/results.csv` (or `results.csv` at dataset root)
+  - Upload the Flickr30k images and the labels/results CSV the notebook expects.
   - When uploading, name the dataset `flickr-image-dataset` (or note the dataset slug) so the notebook code referencing `/kaggle/input/flickr-image-dataset/...` will work without edits.
 
 
