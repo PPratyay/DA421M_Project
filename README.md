@@ -3,7 +3,7 @@
 **Project Description**: This project fine-tunes OpenAI CLIP (RN50x4) on the Flickr30k image-caption dataset to improve image-caption alignment and retrieval. The notebook includes data preparation, optional caption translation, training, and validation code.
 
 **Diagram of the Proposed Model**
-- **Diagram usage**: Add a diagram image to your repository to visualize how CLIP processes images and text. Create a folder named `images` in the repo root and upload your diagram there (for example `images/clip_diagram.png`). Then include it in this README using the markdown below:
+
 
   
 
